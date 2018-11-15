@@ -1,3 +1,3 @@
 #### Redovisa på GitHub
 
-Skriv något kort om ditt redovisa-repo och länka till [repot för me/redovisa på GitHub](XXX).
+I denna kursen skrivs redovisningstext till varje kursmoment och texten läggs ut på [GitHub](https://github.com/kati18/designv2/tree/master/content/redovisning).

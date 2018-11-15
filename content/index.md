@@ -13,7 +13,7 @@ views:
 ---
 Min me-sida i kursen design
 =========================
-[FIGURE src="image/Katja-big.jpg?w=190" class="right" caption="Bild på mig"]
+[FIGURE src="image/katjabig.jpg?w=190" class="right" caption="Bild på mig"]
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 

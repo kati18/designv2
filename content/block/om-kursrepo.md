@@ -1,3 +1,5 @@
 #### Kursrepo
 
-Skriv något kort om kursen och länka till [kursens hemsida på dbwebb.se](XXX) och till [kursrepot på GitHub](XXX).
+Kurs i design, webbprogrammering, BTH 2018.
+Kursens hemsida finns på [dbwebb.se](https://dbwebb.se/kurser/design-v2).
+Kursrepo på [GitHub](https://github.com/kati18/designv2).
