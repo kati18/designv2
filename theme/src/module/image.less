@@ -1,0 +1,24 @@
+/**
+ * Sample of some self contained module.
+ */
+
+/**
+ * Image layout. Extracted from layout/layout.less.
+*/
+.mixin1() {
+    float: right;
+}
+
+.me-small {
+    width: 50px;
+    //float: right;
+    margin-top: 8px;
+    .mixin1();
+}
+
+//The large image of me on page Hem. Is added to the webbsite in redovisa/content/index.md.
+.right {
+    //float: right;
+    margin-left: 15px;
+    .mixin1();
+}

@@ -1,0 +1,43 @@
+/**
+ * Sample of some self contained module. Start by defining the variables that
+ * the user can override and the defined the style.
+ */
+@import url('https://fonts.googleapis.com/css?family=Halant');
+
+@fontFamilyHtml:        Halant, sans-serif;
+@fontSizeHtml:          100%;
+@fontSizeP:             14px;
+@lineHeightP:           1.5;
+@textDecorationA:       none;
+@fontWeightaHover:      bold;
+@textDecorationaActive: underline;
+@siteLogotext:          italic;
+@f:                     font-size;
+@t:                     text-decoration;
+
+html {
+    @{f}: @fontSizeHtml;
+    font-family: @fontFamilyHtml;
+    //font-family: 'Halant', 'sans-serif';
+}
+
+p {
+    @{f}: @fontSizeP;
+    line-height: @lineHeightP;
+}
+
+a {
+    @{t}: @textDecorationA;
+}
+
+a:hover {
+    font-weight: @fontWeightaHover;
+}
+
+a:active {
+    @{t}: @textDecorationaActive;
+}
+
+.site-logo-text {
+    font-style: @siteLogotext;
+}

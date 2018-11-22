@@ -21,7 +21,7 @@ Mitt namn är Katja Tibe och jag är född och uppvuxen i Jönköping. Efter gym
 
 På fritiden tycker jag om att titta på svenska mästarna i hockey, Växjö Lakers, laga god mat, titta på bra filmer, resa och inte minst umgås med min sambo Micke. Flugfiske och svampplockning är också något som jag gärna ägnar mig åt när tid finns.
 
-När det gäller webbprogrammering är jag helt novis men väldigt nyfiken och motiverad till att lära mig allt ni kan och har att lära ut. Att gå från ett arbete där man tillhörde det gamla erfarna gardet till detta för mig helt nya området känns dock *minst* sagt lite läskigt...
+När det gäller webbprogrammering är jag helt novis men väldigt nyfiken och motiverad till att lära mig allt ni kan och har att lära ut. Att gå från ett arbete där man tillhörde det gamla erfarna gardet till detta för mig helt nya området känns dock **minst** sagt lite läskigt...
 
 Vi syns och hörs i stream, forum och chatt!
 

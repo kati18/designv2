@@ -1,0 +1,48 @@
+/**
+ * Sample of some self contained module.
+ */
+
+/**
+ * Sidebar layout. Extracted from layout/layout.less.
+ */
+
+.mixin2(@paddingTop) {
+    padding-top: @paddingTop;
+}
+.mixin3(@floatDirection) {
+    float: @floatDirection;
+}
+
+//Region sidebar left on page Redovisning + one page Verktyg
+ul.toc {
+ padding-left: 0;
+ list-style-type: none;
+}
+
+//Style for sidebars on page Om + page Redovisning
+.wrap-sidebar {
+    box-sizing: border-box;
+    //padding-top: 3em;
+    .mixin2(3em);
+    width: 30%;
+    //float: left;
+    .mixin3(left);
+    display: inline;
+}
+
+//Region sidebar left
+.next {
+    //float: right;
+    .mixin3(right);
+}
+
+//Sidebar left in page Redovisning + one page Verktyg
+.wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar {
+    //padding-top: 0;
+    .mixin2(0);
+}
+
+//Sidebar right in page Om
+.wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar {
+    padding: 2em;
+}

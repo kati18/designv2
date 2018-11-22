@@ -1,0 +1,192 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+//@bgColor.outer-wrap-footer: pink;funk ick
+
+/**
+ * General layout
+ */
+/* Hide submenu, leave this to kmom02*/
+// .rm-desktop ul {
+//      display: none;
+//  }
+
+ /* Hide responsive/mobile menu, leave this to kmom02 */
+// .rm-navbar-max {
+//      display: none;
+// }
+
+.row::after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+//A general style
+.inner-wrap {
+    max-width: 800px;
+    margin: auto;
+}
+
+// //Exported to module/navbar.less
+// .my-navbar {
+//     list-style-type: none;
+// }
+//
+// //Exported to module/navbar.less
+// .my-navbar li {
+//     display: inline;
+//     padding-left: 0;
+// }
+
+//Sidebar left on page Redovisning. Doesn´t seem to have any effect.
+// li.toc {
+//     padding-left: 0;
+// }
+
+//Exported to module/typography.less
+// a:hover {
+//     font-weight: bold;
+// }
+
+//Exported to module/typography.less
+// a:active {
+//     text-decoration: underline;
+// }
+
+//Responsive style in layout/responsive.less
+.site-logo {
+    display: none;
+}
+
+//Exported to module/typography.less
+// .site-logo-text {
+//     font-style: italic;
+// }
+
+//Overridden by style in module/header.less
+// .region-header-col-1 {
+//     width: 15%;
+//     float: left;
+// }
+//
+// //Overridden by style in module/header.less
+// .region-header-col-2 {
+//     width: 70%;
+//     float: left;
+// }
+//
+// //Overridden by style in module/header.less
+// .region-header-col-3 {
+//     width: 15%;
+//     float: left;
+// }
+
+// //Style exported to module/image.less
+// .me-small {
+//     width: 50px;
+//     float: right;
+//     margin-top: 8px;
+// }
+//
+// //The large image of me on page Hem. Style exported to module/image.less
+// .right {
+//     float: right;
+//     margin-left: 15px;
+// }
+
+//Style exported to module/byline.less
+// .byline {
+//     font-style: oblique;
+//     font-size: small;
+//     height: 65px;
+//     margin-bottom: 8px;
+//     border-top: solid thin grey;
+//     border-bottom: solid thin grey;
+// }
+
+// //Style exported to module/footer.less
+// .footer-column {
+//    width: 33%;
+//    float: left;
+//    overflow: auto;
+// }
+//
+// //Style exported to module/footer.less
+// .site-footer {
+//     text-align: center;
+// }
+//
+// //Style exported to module/footer.less
+// .outer-wrap-footer {
+//     background-color: pink;
+//     //background-color: @bgColor.outer-wrap-footer;funk ick
+// }
+
+// //Region sidebar left on page Redovisning. Style exported to
+//module/sidebar.less.
+// ul.toc {
+//     padding-left: 0;
+//     list-style-type: none;
+// }
+
+// //Region sidebar left on page Redovisning. Doesn´t seem to have any effect.
+// li.toc {
+//     padding-left: 0;
+// }
+
+//Style exported to module/breadcrumb.less
+// .breadcrumb-list ul {
+//     padding-left: 0;
+// }
+
+//Style exported to module/breadcrumb.less
+// .breadcrumb-list ul li {
+//     list-style-type: none;
+//     display: inline;
+// }
+
+//Style exported to module/breadcrumb.less
+// .breadcrumb-list ul li:first-child {
+//     //padding-right: 15px;
+//     padding-right: 10px;
+// }
+
+// //Style for sidebars on page Om + page Redovisning. Style exported to
+//module/sidebar.less
+// .wrap-sidebar {
+//     box-sizing: border-box;
+//     padding-top: 3em;
+//     width: 30%;
+//     float: left;
+//     display: inline;
+// }
+
+//Text and image on page Om + text on page Redovisning
+.region-main.has-sidebar {
+    display: inline;
+    float: left;
+    width: 70%;
+/*    height: 800px;*/
+}
+
+// //Region sidebar left. Style exported to module/sidebar.less
+// .next {
+//     float: right;
+// }
+//
+// //Sidebar left in page Redovisning. Style exported to module/sidebar.less
+// .wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar {
+//     padding-top: 0;
+// }
+//
+// //Sidebar right in page Om. Style exported to module/sidebar.less
+// .wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar {
+//     padding: 2em;
+// }
