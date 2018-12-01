@@ -29,7 +29,8 @@
  //if max-width is equal to or less than 850px
 @media screen and (max-width: 850px) {
     .region-main {
-        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.column(@columns - 1);
+        #desinax-vgrid.push(1);
     }
 }
 
@@ -52,7 +53,8 @@
             #desinax-vgrid.column(@columns);
         }
     .region-sidebar-left {
-            #desinax-vgrid.column(@columns);
+            #desinax-vgrid.column(@columns - 1);
+            #desinax-vgrid.push(1);
         }
 }
 

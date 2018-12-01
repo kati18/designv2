@@ -4968,9 +4968,10 @@ ul.toc {
   .region-main {
     display: inline;
     float: left;
-    width: 98.95833333%;
+    width: 94.79166667%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
+    margin-left: 4.6875%;
   }
 }
 @media screen and (max-width: 850px) {
@@ -5000,9 +5001,10 @@ ul.toc {
   .region-sidebar-left {
     display: inline;
     float: left;
-    width: 98.95833333%;
+    width: 94.79166667%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
+    margin-left: 4.6875%;
   }
 }
 /**
