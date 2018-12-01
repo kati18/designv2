@@ -1,3 +1,3 @@
 #### Kolumn 3:
-___
-Här kommer det eventuellt att komma lite mer text nästa gång webbplatsen redigeras. Webbplatsen är för tillfället under bearbetning.
+
+Denna webbplatsen är fortfarande under bearbetning och kommer att förändras fortlöpande under kursen design, webbprogrammering 120 p, BTH. I kmom03 har vi lagt till vertikalt och typografiskt grid.

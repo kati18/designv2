@@ -1,0 +1,327 @@
+/**
+* Copied style from all modules in kmom02. Layout using vgrid.
+*/
+
+
+.row {
+    #desinax-vgrid.row();
+    //background-color: #0f0;
+    margin-bottom: 12px;
+}
+
+
+.inner-wrap-header,
+.inner-wrap-footer {
+    width: 99%; //To get rid of horizontal scrollbar 
+    #desinax-vgrid.grid(100%);
+}
+
+// /**
+// * Style from base.less. All this style moved to base-kmom03.less
+// *base-kmom03.less enclosed in kmom03.less/
+// /**
+//
+// /**
+// * Variables
+// */
+//
+// @bgColorBody: white;
+//
+// body {
+//     background-color: @bgColorBody;
+// }
+//
+// article {
+//     display: block;
+//     height: 100%;
+// }
+//
+// div {
+//     //display: block; kmom03
+//     //border-style: none; kmom03
+// }
+//
+// h4 {
+//     //margin-bottom: 0; kmom03
+// }
+//
+// img {
+//     //max-width: 100%; kmom03
+// }
+
+
+
+/**
+* Style from layout.less
+*/
+/**
+* Variables
+*/
+.mixin4(@display) {
+    display: @display;
+}
+
+// .row::after {
+//     content: "";
+//     //display: block;
+//     .mixin4(block);
+//     clear:both;
+// }
+
+//A general style
+.inner-wrap {
+    // max-width: 800px; kmom03
+    // margin: auto; kmom03
+    #desinax-vgrid.grid(1100px);
+}
+
+.inner-wrap-header {
+    //max-width: 100%; kmom03
+    #desinax-vgrid.grid(100%);
+    background-color: pink;
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+.site-logo {
+    //display: none;
+    .mixin4(none);
+}
+
+//Text and image on page Om + text on page Redovisning
+//.region-main.has-sidebar { bortkommenterat kmom03
+    //display: inline;
+    //.mixin4(inline); bortkommenterat kmom03
+    // float: left;
+    // width: 70%; kmom03
+    //height: 800px; kmom03
+//}
+
+.region-main,
+.region-has-sidebar-left,
+.region-has-sidebar-right {
+    //overflow: auto;
+}
+
+.region-main {
+    #desinax-vgrid.column(18);
+    //#desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(1);
+
+    //this push-style instead if region main has a sidebar
+    &.has-sidebar {
+    #desinax-vgrid.push(0);
+    }
+
+    //this column-style instead if region main has a sidebar right
+    &.has-sidebar-right {
+    #desinax-vgrid.column(18 - 1);
+    //#desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
+
+    /**this column-style instead if region main has a sidebar left and
+    * a sidebar right
+    */
+    &.has-sidebar-left.has-sidebar-right {
+    #desinax-vgrid.column(14);
+    //#desinax-vgrid.column(@columns - 10);
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(6);
+    //#desinax-vgrid.column(@columns * 1 / 4);
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+}
+
+//Not in use. Only for three columns in pages.
+// .region-sidebar-left.has-sidebar-right,
+// .region-sidebar-right.has-sidebar-left {
+//     #desinax-vgrid.column(6 - 1);
+//     //#desinax-vgrid.column(@columns * 1 / 4 - 1);
+// }
+
+/**
+* Style from header.less
+*/
+//.mixin(@width) { kmom03
+    // float: left; kmom03
+    // width: @width; kmom03
+//} kmom03
+
+.region-header-col-1,
+.region-header-col-3 {
+    #desinax-vgrid.column(5);
+    //width: 20%;
+    //.mixin(20%); kmom03
+    //float: left;
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(14);
+    //width: 60%;
+    text-align: center;
+    //.mixin(60%); kmom03
+    //float: left;
+}
+
+//New style not existing in layout/layout.less
+
+
+
+/**
+* Navbar layout.
+*/
+
+.my-navbar {
+    list-style-type: none;
+}
+.my-navbar li {
+    display: inline;
+    padding-left: 0;
+}
+
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+}
+
+
+/**
+* Style from breadcrumb.less
+*/
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+.breadcrumb-list ul {
+    padding-left: 0;
+    li {
+        list-style-type: none;
+        display: inline;
+    }
+}
+
+//     li:first-child {
+//         padding-right: 10px;
+//     }
+// }
+
+
+/**
+ * Style from image.less.
+*/
+//.mixin1() { kmom03
+    //float: right; kmom03
+//} kmom03
+
+//.me-small { // kmom03 Bilden omgjord till 50pxx50px.
+    //width: 50px;
+    //float: right;
+    //margin-top: 8px; kmom03
+    //.mixin1(); kmom03
+//}
+
+//The large image of me on page Hem. Is added to the webbsite in redovisa/content/index.md.
+.right {
+    //float: right;
+    //margin-left: 15px; kmom03
+    //.mixin1(); kmom03
+}
+
+
+// /** Allt bortkommenterat i kmom03
+//  * Sidebar layout. Extracted from layout/layout.less.
+//  */
+//
+// .mixin2(@paddingTop) {
+//     padding-top: @paddingTop;
+// }
+.mixin3(@floatDirection) {
+    float: @floatDirection;
+}
+//
+// //Region sidebar left on page Redovisning + one page Verktyg
+ul.toc {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+// //Style from sidebar.less. Sidebars on page Om + page Redovisning
+// .wrap-sidebar {
+//     box-sizing: border-box;
+//     //padding-top: 3em;
+//     .mixin2(3em);
+//     //width: 30%; kmom03
+//     //float: left;
+//     //.mixin3(left); kmom03
+//     display: inline;
+// }
+//
+//Region sidebar left
+.next {
+    //float: right;
+    .mixin3(right);
+}
+//
+// //Sidebar left in page Redovisning + one page Verktyg
+// .wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar {
+//     //padding-top: 0;
+//     .mixin2(0);
+// }
+//
+// //Sidebar right in page Om
+// .wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar {
+//     padding: 2em;
+// }
+
+/**
+* Style from byline.less
+*/
+@borderColor:   grey;
+
+.byline {
+    font-style: oblique;
+    font-size: small;
+    height: 75px;
+    //margin-bottom: 8px;kmom03
+    border-top: solid thin @borderColor;
+    border-bottom: solid thin @borderColor;
+}
+
+
+/**
+ * Footer layout. Style from footer.less
+*/
+//Style imported from layout/layout.less
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+   //width: 33%; kmom03
+   //float: left;kmom03
+   //overflow: auto;
+}
+
+//Style imported from layout/layout.less
+.site-footer {
+    text-align: center;
+    #desinax-vgrid.column(@columns);
+}
+
+//Style imported from layout/layout.less
+.outer-wrap-footer {
+    background-color: pink;
+}

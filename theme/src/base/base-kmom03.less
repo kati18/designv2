@@ -1,0 +1,59 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+// @import url('https://fonts.googleapis.com/css?family=Halant');
+//
+// @fontFamilyHtml: Halant, sans-serif; Style transferred to module/typography.less
+@bgColorBody: white;
+// @bgColorHtml: white;
+
+// Style transferred to module/typography.less
+// html {
+//     font-size: 100%;
+//     font-family: @fontFamilyHtml;
+//     //font-family: 'Halant', 'sans-serif';
+// }
+
+// html {
+//     background: @bgColorHtml;
+// }
+
+body {
+    background-color: @bgColorBody;
+    // Moved here from vgrid.less. Activates the grid base font:
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+// //The text on page Hem and Om
+// article {
+//     display: block;
+//     height: 100%;
+// }
+
+// div {
+//     display: block; kmom03
+//     border-style: none;
+// }
+
+// Style transferred to module/typography.less
+// p {
+//     font-size: 14px;
+// }
+
+// h4 {
+//     margin-bottom: 0; kmom03
+// }
+
+// Style transferred to module/typography.less
+// a {
+//     text-decoration: none;
+// }
+
+//Style for responsive images
+img {
+    max-width: 100%;
+}
+
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();

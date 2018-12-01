@@ -4503,7 +4503,7 @@ a:active {
  * Sample of some self contained module.
  */
 /**
- * Image layout. Extracted from layout/layout.less.
+ * Image layout. Extracted from layout/layout.less. Same file for kmom02, kmom03
 */
 .me-small {
   width: 50px;
@@ -4872,5 +4872,5 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   font-family: 'KoHo';
   font-style: normal;
   font-weight: 600;
-  src: local('KoHo SemiBold'), local('KoHo-SemiBold'), url(https://fonts.gstatic.com/s/koho/v1/K2FxfZ5fmddNPvEwaJnzIg.ttf) format('truetype');
+  src: local('KoHo SemiBold'), local('KoHo-SemiBold'), url(https://fonts.gstatic.com/s/koho/v2/K2FxfZ5fmddNPvEwaJnzIg.ttf) format('truetype');
 }

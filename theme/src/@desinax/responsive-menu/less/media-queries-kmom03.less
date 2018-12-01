@@ -1,0 +1,108 @@
+/**
+ * Style for responsive menu
+ */
+
+/**
+ * Layout for responsive style through media queries.
+  */
+
+ /**
+ * Example on media queries
+  */
+@media screen and (max-width: 680px) {
+//     .rm-small {
+//         display: block;
+//     }
+//
+    .rm-desktop {
+        display: none;
+    }
+}
+
+ // @media screen and (min-width: 680px) {
+ //     .rm-small {
+ //         display: none;
+ //     }
+ // }
+
+ //Responsive style through media queries for region-main. The style has effect
+ //if max-width is equal to or less than 850px
+@media screen and (max-width: 850px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .region-main
+        &.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+    .region-sidebar-right {
+            #desinax-vgrid.push(0);
+            #desinax-vgrid.column(@columns);
+        }
+}
+
+
+@media screen and (max-width: 850px) {
+    .region-main
+        &.has-sidebar-left {
+            #desinax-vgrid.column(@columns);
+        }
+    .region-sidebar-left {
+            #desinax-vgrid.column(@columns);
+        }
+}
+
+ /**
+  * Responsive style through media queries.
+  */
+
+//Responsive style through media queries for byline which is hidden
+// if width is max 490px
+@media (max-width: 490px) {
+    .byline {
+        display: none;
+    }
+}
+
+
+
+//Responsive style through media queries for image in byline which is hidden
+// if width is max 490px
+@media (max-width: 490px) {
+    .me-small {
+        display: none;
+    }
+}
+
+
+
+/* Stacking av footern - footer columns are stacked on top of each other
+if width < 920px*/
+// @media (max-width: 920px) {
+//     h1 {
+//         font-size: 2em;
+//         margin-bottom: 1.75rem;
+//     }
+//
+//     h4 {
+//         font-size: 1.3em;
+//         margin-top: 0.3em;
+//     }
+//
+//     .footer-column {
+//         height: 100%;
+//         width: 98%;
+//         margin-left: 1%;
+//         margin-right: 1%;
+//     }
+// }
+
+@media screen and (max-width: 490px) {
+    .footer-column {
+        #desinax-vgrid.column(@columns);
+    }
+}
