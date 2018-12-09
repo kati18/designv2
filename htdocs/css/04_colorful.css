@@ -1,7 +1,18 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet 04-colorful.less, kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the colorful theme, design course and kmom04 where we use LESS.
+ */
+@font-face {
+  font-family: 'KoHo';
+  font-style: normal;
+  font-weight: 600;
+  src: local('KoHo SemiBold'), local('KoHo-SemiBold'), url(https://fonts.gstatic.com/s/koho/v2/K2FxfZ5fmddNPvEwaJnzIg.ttf) format('truetype');
+}
+/*!
+ * Stylesheet for design kmom04.This style is my base-style in kmom04.
+ *
+ * This stylesheet is the base-style for the design course and kmom04 where we create three different styles/themes (dark, minimalistic and colorful). The three themes all have other style sheets which imports this base-style-sheet/module. This base-style sheet/module on the other hand imports other style sheets/modules. We use LESS.
  */
 /**
  * Import mixins. Can be called from any of the imported stylesheets and
@@ -4322,15 +4333,6 @@ template {
  * Internal self contained modules, save in directory module/.
  */
 /**
- * Style for the stylechooser.
- */
-/**
- * Variables
- */
-/**
- * Style
- */
-/**
  * Import the typographic grid.
  */
 /**
@@ -4376,7 +4378,7 @@ template {
  * Base style to affect HTML elements on a general scale.
  */
 body {
-  background-color: #e2e2e2;
+  background-color: #40bbcc;
   font: 16px/1.5 KoHo, sans-serif;
 }
 img {
@@ -4404,7 +4406,7 @@ h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
   font-weight: normal;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #000;
   margin-bottom: 23px;
 }
 h1 ~ h1,
@@ -4423,7 +4425,7 @@ h2 {
   line-height: 1.6;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #000;
 }
 h2 + h3 {
   margin-top: 24px;
@@ -4433,7 +4435,7 @@ h3 {
   line-height: 1.71428571;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #000;
 }
 h3 + h4 {
   margin-top: 24px;
@@ -4443,7 +4445,7 @@ h4 {
   line-height: 1;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #000;
 }
 h4 + h5 {
   margin-top: 24px;
@@ -4452,7 +4454,7 @@ h5 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #000;
 }
 h5 + h6 {
   margin-top: 24px;
@@ -4461,7 +4463,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #000;
 }
 p {
   margin-bottom: 24px;
@@ -4735,7 +4737,7 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  background-color: pink;
+  background-color: #ff69b4;
 }
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
@@ -4869,8 +4871,8 @@ ul.toc {
   font-style: oblique;
   font-size: small;
   height: 75px;
-  border-top: solid thin grey;
-  border-bottom: solid thin grey;
+  border-top: solid thin #000;
+  border-bottom: solid thin #000;
 }
 /**
  * Footer layout. Style from footer.less
@@ -4891,7 +4893,7 @@ ul.toc {
   margin-right: 0.52083333%;
 }
 .outer-wrap-footer {
-  background-color: pink;
+  background-color: #ff69b4;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -5121,7 +5123,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: #e2e2e2;
+  background-color: #fff182;
 }
 .rm-desktop li {
   position: relative;
@@ -5132,7 +5134,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a {
   color: inherit;
-  background-color: #e2e2e2;
+  background-color: #fff182;
 }
 .rm-desktop li a:hover {
   color: inherit;
@@ -5155,7 +5157,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   width: 100%;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
   background-color: #444;
-  color: #fff;
+  color: #40bbcc;
 }
 .rm-mobile a {
   color: inherit;
@@ -5195,7 +5197,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #9FB129;
+  color: #333;
   position: fixed;
   top: 16px;
   right: 24px;
@@ -5212,7 +5214,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #c34757;
+  background-color: #fff182;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -5229,7 +5231,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max .rm-mobile .rm-submenu-button {
   float: right;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
-  background-color: #444;
+  background-color: #ff69b4;
   padding: 8px 24px;
   margin-right: 8px;
   margin-top: 10px;
@@ -5242,7 +5244,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-max .rm-mobile .rm-submenu-button:hover {
   text-decoration: none;
-  background-color: #ccc;
+  background-color: #40bbcc;
 }
 .rm-max .rm-mobile li ul {
   padding-left: 8px;
@@ -5259,12 +5261,46 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * My own settings, not currently in their own module.
  */
-@font-face {
-  font-family: 'KoHo';
-  font-style: normal;
-  font-weight: 600;
-  src: local('KoHo SemiBold'), local('KoHo-SemiBold'), url(https://fonts.gstatic.com/s/koho/v2/K2FxfZ5fmddNPvEwaJnzIg.ttf) format('truetype');
-}
 body {
   overflow-x: hidden;
+}
+@text Color: //#333;
+/*@maxBgColor = background-color responsive menu. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+/*@navbarItemBgColor = background-color navbar. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+.region-flash img {
+  display: none;
+}
+.region-main {
+  background-color: #fff182;
+}
+a,
+.rm-desktop li a {
+  color: #000;
+}
+.my-navbar.rm-default.rm-desktop li {
+  border: 3px #40bbcc dotted;
+}
+p {
+  padding-left: 0.2em;
+}
+.bloc.toc,
+.wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar,
+.wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar,
+code,
+.byline {
+  background-color: #ff69b4;
+}
+.right,
+.me-small {
+  margin-right: 0.2em;
+}
+.footer-column-x.footer-column-1 h4,
+.footer-column-x.footer-column-2 h4,
+.footer-column-x.footer-column-3 h4,
+.block.site-footer p {
+  background-color: #fff182;
 }

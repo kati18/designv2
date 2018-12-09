@@ -1,0 +1,80 @@
+/*!
+ * Stylesheet 04-colorful.less, kmom04.
+ *
+ * This stylesheet is for the colorful theme, design course and kmom04 where we use LESS.
+ */
+@import url('https://fonts.googleapis.com/css?family=KoHo:600');
+@import "kmom04.less";
+
+//Variables:
+@bgColorBody: #40bbcc;
+@bgColorHeaderFooter: #ff69b4;
+@textColor: //#333;
+@textColorLinks: #000;
+@colorHeadingsBorderBottom: #000;
+@borderColor: #000; //variable defined in less/vgrid.less
+@bgColorCode: #262626;
+
+/*@maxBgColor = background-color responsive menu. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+@maxBgColor: #fff182;
+@maxButtonClickedColor: #333;
+@maxButtonSubmenuBgColor: #ff69b4;
+@maxButtonSubmenuHoverBgColor: #40bbcc;
+@mobileColor: #40bbcc;//The arrows on the buttons and the links.
+
+/*@navbarItemBgColor = background-color navbar. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+@navbarItemBgColor: #fff182;
+
+@fontFamilyHeadings: KoHo, sans-serif;
+@fontFamilyBody: KoHo, sans-serif;
+
+@colorH1BorderBottom: @colorHeadingsBorderBottom;
+@colorH2BorderBottom: @colorHeadingsBorderBottom;
+@colorH3BorderBottom: @colorHeadingsBorderBottom;
+@colorH4BorderBottom: @colorHeadingsBorderBottom;
+@colorH5BorderBottom: @colorHeadingsBorderBottom;
+@colorH6BorderBottom: @colorHeadingsBorderBottom;
+
+.region-flash img {
+    display: none;
+}
+
+.region-main {
+    background-color: #fff182;
+}
+
+a, .rm-desktop li a, {
+    color: @textColorLinks;
+}
+
+.my-navbar.rm-default.rm-desktop li {
+    border: 3px @bgColorBody dotted; //#40bbcc;
+}
+
+p {
+    padding-left: 0.2em;
+}
+
+.bloc.toc,
+.wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar,
+.wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar,
+code,
+.byline {
+    background-color: #ff69b4;
+}
+
+.right,
+.me-small {
+    margin-right: 0.2em;
+}
+
+.footer-column-x.footer-column-1 h4,
+.footer-column-x.footer-column-2 h4,
+.footer-column-x.footer-column-3 h4,
+.block.site-footer p {
+    background-color: #fff182;
+}

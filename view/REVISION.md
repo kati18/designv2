@@ -20,3 +20,7 @@ v3.0.0 (2018-12-01)
 v3.0.1 (2018-12-01)
 --------------------
 * Adding more responsivity
+
+v4.0.0 (2018-12-09)
+--------------------
+* Adding implemented default style kmom04 and specific themes minimalistic, dark and colorful.

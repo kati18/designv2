@@ -2,6 +2,7 @@
 * Copied style from all modules in kmom02. Layout using vgrid.
 */
 
+@bgColorHeaderFooter: pink;
 
 .row {
     #desinax-vgrid.row();
@@ -12,7 +13,7 @@
 
 .inner-wrap-header,
 .inner-wrap-footer {
-    width: 99%; //To get rid of horizontal scrollbar 
+    width: 99%; //To get rid of horizontal scrollbar
     #desinax-vgrid.grid(100%);
 }
 
@@ -78,7 +79,7 @@
 .inner-wrap-header {
     //max-width: 100%; kmom03
     #desinax-vgrid.grid(100%);
-    background-color: pink;
+    background-color: @bgColorHeaderFooter;
 }
 
 .vgrid .inner-wrap {
@@ -323,5 +324,5 @@ ul.toc {
 
 //Style imported from layout/layout.less
 .outer-wrap-footer {
-    background-color: pink;
+    background-color: @bgColorHeaderFooter;
 }

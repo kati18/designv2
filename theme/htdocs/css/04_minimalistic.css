@@ -1,7 +1,30 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet 04-minimalistic.less, kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the minimalistic theme, design course and kmom04 where we use LESS.
+ */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(https://fonts.gstatic.com/s/dancingscript/v9/If2RXTr6YS-zF4S-kcSWSVi_szLgiuQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Cormorant SemiBold'), local('Cormorant-SemiBold'), url(https://fonts.gstatic.com/s/cormorant/v6/H4cgBXOCl9bbnla_nHIiML-ohYa2.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cormorant Bold'), local('Cormorant-Bold'), url(https://fonts.gstatic.com/s/cormorant/v6/H4cgBXOCl9bbnla_nHIiVL6ohYa2.ttf) format('truetype');
+}
+/*!
+ * Stylesheet for design kmom04.This style is my base-style in kmom04.
+ *
+ * This stylesheet is the base-style for the design course and kmom04 where we create three different styles/themes (dark, minimalistic and colorful). The three themes all have other style sheets which imports this base-style-sheet/module. This base-style sheet/module on the other hand imports other style sheets/modules. We use LESS.
  */
 /**
  * Import mixins. Can be called from any of the imported stylesheets and
@@ -4322,15 +4345,6 @@ template {
  * Internal self contained modules, save in directory module/.
  */
 /**
- * Style for the stylechooser.
- */
-/**
- * Variables
- */
-/**
- * Style
- */
-/**
  * Import the typographic grid.
  */
 /**
@@ -4376,8 +4390,8 @@ template {
  * Base style to affect HTML elements on a general scale.
  */
 body {
-  background-color: #e2e2e2;
-  font: 16px/1.5 KoHo, sans-serif;
+  background-color: white;
+  font: 16px/1.5 'Cormorant', serif;
 }
 img {
   max-width: 100%;
@@ -4388,7 +4402,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: KoHo, sans-serif;
+  font-family: 'Dancing Script', cursive;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -4404,7 +4418,7 @@ h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
   font-weight: normal;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #333;
   margin-bottom: 23px;
 }
 h1 ~ h1,
@@ -4423,7 +4437,7 @@ h2 {
   line-height: 1.6;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #333;
 }
 h2 + h3 {
   margin-top: 24px;
@@ -4433,7 +4447,7 @@ h3 {
   line-height: 1.71428571;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #333;
 }
 h3 + h4 {
   margin-top: 24px;
@@ -4443,7 +4457,7 @@ h4 {
   line-height: 1;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #333;
 }
 h4 + h5 {
   margin-top: 24px;
@@ -4452,7 +4466,7 @@ h5 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #333;
 }
 h5 + h6 {
   margin-top: 24px;
@@ -4461,7 +4475,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #333;
 }
 p {
   margin-bottom: 24px;
@@ -4735,7 +4749,7 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  background-color: pink;
+  background-color: #c0c0c0;
 }
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
@@ -4869,8 +4883,8 @@ ul.toc {
   font-style: oblique;
   font-size: small;
   height: 75px;
-  border-top: solid thin grey;
-  border-bottom: solid thin grey;
+  border-top: solid thin #333;
+  border-bottom: solid thin #333;
 }
 /**
  * Footer layout. Style from footer.less
@@ -4891,7 +4905,7 @@ ul.toc {
   margin-right: 0.52083333%;
 }
 .outer-wrap-footer {
-  background-color: pink;
+  background-color: #c0c0c0;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -5155,7 +5169,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   width: 100%;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
   background-color: #444;
-  color: #fff;
+  color: #333;
 }
 .rm-mobile a {
   color: inherit;
@@ -5195,7 +5209,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #9FB129;
+  color: #333;
   position: fixed;
   top: 16px;
   right: 24px;
@@ -5212,7 +5226,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #c34757;
+  background-color: #c0c0c0;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -5229,7 +5243,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max .rm-mobile .rm-submenu-button {
   float: right;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
-  background-color: #444;
+  background-color: #fff;
   padding: 8px 24px;
   margin-right: 8px;
   margin-top: 10px;
@@ -5242,7 +5256,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-max .rm-mobile .rm-submenu-button:hover {
   text-decoration: none;
-  background-color: #ccc;
+  background-color: #c0c0c0;
 }
 .rm-max .rm-mobile li ul {
   padding-left: 8px;
@@ -5259,12 +5273,30 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * My own settings, not currently in their own module.
  */
-@font-face {
-  font-family: 'KoHo';
-  font-style: normal;
-  font-weight: 600;
-  src: local('KoHo SemiBold'), local('KoHo-SemiBold'), url(https://fonts.gstatic.com/s/koho/v2/K2FxfZ5fmddNPvEwaJnzIg.ttf) format('truetype');
-}
 body {
   overflow-x: hidden;
+}
+/*@maxBgColor = background-color responsive menu. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+/*Affects only an image element that is a child of the class
+region-main AND a child of the class site-logo-text-icon:*/
+.region-flash img,
+.site-logo-text-icon img {
+  display: none;
+}
+body {
+  color: #333;
+  line-height: 1.5;
+}
+.region-main {
+  background-color: pink;
+}
+a,
+.rm-desktop li a {
+  color: #333;
+  font-style: italic;
+}
+p {
+  padding-left: 0.1em;
 }

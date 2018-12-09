@@ -1,0 +1,51 @@
+/*!
+ * Stylesheet 04-dark.less, kmom04.
+ *
+ * This stylesheet is for the dark theme, design course and kmom04 where we use LESS.
+ */
+@import url('https://fonts.googleapis.com/css?family=KoHo:600');
+@import "kmom04.less";
+
+//Variables:
+@bgColorBody: #262626; //7F7F7F
+@bgColorHeaderFooter: #262626; //7F7F7F;
+@textColor: #ff851b;
+@textColorLinks: #ff4136; //#ff4500;
+@colorHeadingsBorderBottom: #ffae67;
+@borderColor: #ffae67; //variable defined in less/vgrid.less
+@bgColorCode: #262626;
+
+/*@maxBgColor = background-color responsive menu. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+@maxBgColor: #333333;
+@maxButtonClickedColor: @textColor;
+@mobileColor: @textColorLinks;//The arrows on the buttons and the links.
+
+/*@navbarItemBgColor = background-color navbar. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+@navbarItemBgColor: #333333;
+
+@fontFamilyHeadings: KoHo, sans-serif;
+@fontFamilyBody: monospace;
+
+@colorH1BorderBottom: @colorHeadingsBorderBottom; //#666;
+@colorH2BorderBottom: @colorHeadingsBorderBottom; //#CCC;
+@colorH3BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+@colorH4BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+@colorH5BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+@colorH6BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+
+
+body {
+    color: @textColor;
+}
+
+a, .rm-desktop li a, {
+    color: @textColorLinks;
+}
+
+code {
+    background-color: @bgColorCode;
+}

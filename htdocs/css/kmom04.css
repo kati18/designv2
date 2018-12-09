@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.This style is my base-style in kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is the base-style for the design course and kmom04 where we create three different styles/themes (dark, minimalistic and colorful). The three themes all have other style sheets which imports this base-style-sheet/module. This base-style sheet/module on the other hand imports other style sheets/modules. We use LESS.
  */
 /**
  * Import mixins. Can be called from any of the imported stylesheets and
@@ -4322,15 +4322,6 @@ template {
  * Internal self contained modules, save in directory module/.
  */
 /**
- * Style for the stylechooser.
- */
-/**
- * Variables
- */
-/**
- * Style
- */
-/**
  * Import the typographic grid.
  */
 /**
@@ -4376,8 +4367,8 @@ template {
  * Base style to affect HTML elements on a general scale.
  */
 body {
-  background-color: #e2e2e2;
-  font: 16px/1.5 KoHo, sans-serif;
+  background-color: white;
+  font: 16px/1.5 "sans-serif";
 }
 img {
   max-width: 100%;
@@ -4388,7 +4379,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: KoHo, sans-serif;
+  font-family: "serif";
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5155,7 +5146,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   width: 100%;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
   background-color: #444;
-  color: #fff;
+  color: #333;
 }
 .rm-mobile a {
   color: inherit;
@@ -5195,7 +5186,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #9FB129;
+  color: #333;
   position: fixed;
   top: 16px;
   right: 24px;
@@ -5212,7 +5203,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #c34757;
+  background-color: #5cb26d;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -5229,7 +5220,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max .rm-mobile .rm-submenu-button {
   float: right;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
-  background-color: #444;
+  background-color: #fff;
   padding: 8px 24px;
   margin-right: 8px;
   margin-top: 10px;
@@ -5259,12 +5250,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * My own settings, not currently in their own module.
  */
-@font-face {
-  font-family: 'KoHo';
-  font-style: normal;
-  font-weight: 600;
-  src: local('KoHo SemiBold'), local('KoHo-SemiBold'), url(https://fonts.gstatic.com/s/koho/v2/K2FxfZ5fmddNPvEwaJnzIg.ttf) format('truetype');
-}
 body {
   overflow-x: hidden;
 }

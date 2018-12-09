@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.This style is my base-style in kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is the base-style for the design course and kmom04 where we create three different styles/themes (dark, minimalistic and colorful). The three themes all have other style sheets which imports this base-style-sheet/module. This base-style sheet/module on the other hand imports other style sheets/modules. We use LESS.
  */
 
 
@@ -38,7 +38,7 @@
  * Internal self contained modules, save in directory module/.
  */
 //@import "module/kmom01.less";
-@import "module/stylechooser.less";  // Just an example module
+//@import "module/stylechooser.less";  // Just an example module. Empty.
 
 
 /**
@@ -66,7 +66,7 @@
  * Base style to affect HTML elements on a general scale.
  */
 //@import "base/base.less";
-@import "base/base-kmom03.less";
+@import "base/base-kmom04.less";
 
 
 /**
@@ -89,7 +89,7 @@
  */
 // @import "layout/layout.less";
 //@import "layout/layout-kmom02.less"; //Ersatt av module/header.less
-//@import "layout/responsive.less";
+//@import "layout/responsive.less"; 181205: Lägga tillbaka igen?
 @import "layout/regions.less";     // To add style for ?regions
 
 
@@ -122,19 +122,24 @@
 /**
  * My own settings, not currently in their own module.
  */
-@import url('https://fonts.googleapis.com/css?family=KoHo:600');
+//@import url('https://fonts.googleapis.com/css?family=KoHo:600');
 //@fontFamilyHtml: KoHo, sans-serif;
 
 // Magic number and base fontsize
 @magicNumber:  24px;  // 22px
 @fontSizeBody: 16px;
 
-// Default font-families
-@fontFamilyHeadings: KoHo, sans-serif;//"serif";
-@fontFamilyBody:     KoHo, sans-serif;
-// @fontFamilyCode:     //"monospace";
+@maxBgColor: #5cb26d;
+@maxButtonSubmenuBgColor: #fff;
+@maxButtonClickedColor: #333;
+@mobileColor: #333; //The arrows on the buttons and the links.
 
-@bgColorBody: #e2e2e2;
+// Default font-families
+// @fontFamilyHeadings: KoHo, sans-serif;//"serif";
+// @fontFamilyBody:     KoHo, sans-serif;
+// // @fontFamilyCode:     //"monospace";
+//
+
 
 //Style added 181203 due to horizontal scrollbar in responsive mode
 body {

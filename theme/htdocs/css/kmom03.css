@@ -4944,7 +4944,7 @@ ul.toc {
 }
 .right {
   margin-left: 20px;
-  margin-right: 0;
+  margin-right: 5px;
   float: right;
 }
 /**
@@ -5264,4 +5264,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   font-style: normal;
   font-weight: 600;
   src: local('KoHo SemiBold'), local('KoHo-SemiBold'), url(https://fonts.gstatic.com/s/koho/v2/K2FxfZ5fmddNPvEwaJnzIg.ttf) format('truetype');
+}
+body {
+  overflow-x: hidden;
 }
