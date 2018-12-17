@@ -4855,6 +4855,13 @@ hr::after {
   display: inline;
 }
 /**
+* Blog list item layout.
+*/
+.blog-list-item h1 a {
+  color: black;
+  text-decoration: none;
+}
+/**
  * Style from image.less.
 */
 ul.toc {

@@ -1,0 +1,173 @@
+/*!
+ * Stylesheet for design kmom05.This style is my base-style in kmom05.
+ *
+ * This stylesheet is the base-style for the design course and kmom04 where we create three different styles/themes (dark, minimalistic and colorful). The three themes all have other style sheets which imports this base-style-sheet/module. This base-style sheet/module on the other hand imports other style sheets/modules. We use LESS.
+ */
+
+
+
+/**
+ * Import mixins. Can be called from any of the imported stylesheets and
+ * is an alternative to "overflow: auto;". Is called upon by ".clearfix();".
+ */
+// @import "mixin/clearfix.less";
+//
+// .clearfix() {
+//     #design-mixin.clearfix();
+// }
+
+
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+//@import "module/kmom01.less";
+//@import "module/stylechooser.less";  // Just an example module. Empty.
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+// // Activate the grid base font. Moved to base-kmom03.less
+// body {
+//     #desinax-hgrid.font(@fontSizeBody);
+// }
+//
+// // Activate grid and affect all typographic elements. Moved to base-kmom03.less
+// #desinax-hgrid.activateDefaultTypography();
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+//@import "base/base.less";
+@import "base/base-kmom04.less";
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid.less";
+
+// Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+// @import "layout/layout.less";
+//@import "layout/layout-kmom02.less"; //Ersatt av module/header.less
+//@import "layout/responsive.less"; 181205: Lägga tillbaka igen?
+@import "layout/regions.less";     // To add style for ?regions
+
+
+/**
+ * A responsive menu.
+ */
+//@import "@desinax/responsive-menu/less/responsive-menu.less";
+//@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+
+/* My modules: */
+//@import "module/typography.less"; // Style extracted from base/base.less
+// @import "module/header.less"; // A copy of layout/layout-kmom02.less
+// @import "module/breadcrumb.less"; // Style extracted from layout/layout.less
+
+// Style extracted from layout/layout.less. Same file for both kmom02, kmom03
+@import "module/image-kmom03.less"; // Style extracted from layout/layout.less
+
+// @import "module/navbar.less"; // Style extracted from layout/layout.less
+// @import "module/sidebar.less"; // Style extracted from layout/layout.less
+// @import "module/byline.less"; // Style extracted from layout/layout.less
+// @import "module/footer.less"; // Style extracted from layout/layout.less
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/media-queries-kmom03.less";
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+
+
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+//@import url('https://fonts.googleapis.com/css?family=KoHo:600');
+//@fontFamilyHtml: KoHo, sans-serif;
+
+// Magic number and base fontsize
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 16px;
+
+@maxBgColor: #5cb26d;
+@maxButtonSubmenuBgColor: #fff;
+@maxButtonClickedColor: #333;
+@mobileColor: #333; //The arrows on the buttons and the links.
+
+// Default font-families
+// @fontFamilyHeadings: KoHo, sans-serif;//"serif";
+// @fontFamilyBody:     KoHo, sans-serif;
+// // @fontFamilyCode:     //"monospace";
+//
+
+
+//Style added 181203 due to horizontal scrollbar in responsive mode
+body {
+    overflow-x:hidden;
+}

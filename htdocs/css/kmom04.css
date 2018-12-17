@@ -4844,6 +4844,13 @@ hr::after {
   display: inline;
 }
 /**
+* Blog list item layout.
+*/
+.blog-list-item h1 a {
+  color: black;
+  text-decoration: none;
+}
+/**
  * Style from image.less.
 */
 ul.toc {
@@ -5112,7 +5119,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: #e2e2e2;
+  background-color: inherit;
 }
 .rm-desktop li {
   position: relative;
@@ -5123,7 +5130,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a {
   color: inherit;
-  background-color: #e2e2e2;
+  background-color: inherit;
 }
 .rm-desktop li a:hover {
   color: inherit;
