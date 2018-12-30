@@ -28,3 +28,7 @@ v4.0.0 (2018-12-09)
 v5.0.0 (2018-12-17)
 --------------------
 * Adding blogg with images.
+
+v6.0.0 (2018-12-30)
+--------------------
+* Adding stylesheets for themes design elements and design principles and report for design principles.

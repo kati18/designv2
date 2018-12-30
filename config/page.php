@@ -46,8 +46,12 @@ return [
             "data" => [
                 "homeLink"      => "",
                 "siteLogoText"  => "design",
-                "siteLogoTextIcon" => "image/theme/leaf_40x40.png",
-                "siteLogoTextIconAlt" => "Löv-bild",
+                //"siteLogoTextIcon" => "image/theme/leaf_40x40.png",
+                // "siteLogoTextIcon" => "image/theme/32px-Koch_Snowflake_4th_iteration.svg",
+                "siteLogoTextIcon" => "image/theme/64px-Koch_snowflake.jpg",
+                // "siteLogoTextIconAlt" => "Löv-bild",
+                // "siteLogoTextIconAlt" => "Bild på snöflinga",
+                "siteLogoTextIconAlt" => "Bild på färglad snöflinga",
             ],
         ],
         [

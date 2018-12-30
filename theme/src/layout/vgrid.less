@@ -13,7 +13,10 @@
 
 .inner-wrap-header,
 .inner-wrap-footer {
-    width: 99%; //To get rid of horizontal scrollbar
+    /**Style below changed from 99% to 100% due to
+    *overflow-x:hidden in *kmom03.less, kmom04.less, kmom05.LESS
+    */
+    width: 100%; 
     #desinax-vgrid.grid(100%);
 }
 

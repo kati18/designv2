@@ -1,28 +1,14 @@
 /*!
- * Stylesheet 04-minimalistic.less, kmom04.
- *
- * This stylesheet is for the minimalistic theme, design course and kmom04 where we use LESS.
- */
+* Stylesheet kmom06-designprinciper.
+*/
 @font-face {
-  font-family: 'Dancing Script';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(https://fonts.gstatic.com/s/dancingscript/v9/If2RXTr6YS-zF4S-kcSWSVi_szLgiuQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Cormorant';
+  font-family: 'KoHo';
   font-style: normal;
   font-weight: 600;
-  src: local('Cormorant SemiBold'), local('Cormorant-SemiBold'), url(https://fonts.gstatic.com/s/cormorant/v6/H4cgBXOCl9bbnla_nHIiML-ohYa2.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Cormorant';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Cormorant Bold'), local('Cormorant-Bold'), url(https://fonts.gstatic.com/s/cormorant/v6/H4cgBXOCl9bbnla_nHIiVL6ohYa2.ttf) format('truetype');
+  src: local('KoHo SemiBold'), local('KoHo-SemiBold'), url(https://fonts.gstatic.com/s/koho/v2/K2FxfZ5fmddNPvEwaJnzIg.ttf) format('truetype');
 }
 /*!
- * Stylesheet for design kmom04.This style is my base-style in kmom04.
+ * Stylesheet for design kmom05.This style is my base-style in kmom05.
  *
  * This stylesheet is the base-style for the design course and kmom04 where we create three different styles/themes (dark, minimalistic and colorful). The three themes all have other style sheets which imports this base-style-sheet/module. This base-style sheet/module on the other hand imports other style sheets/modules. We use LESS.
  */
@@ -4391,7 +4377,7 @@ template {
  */
 body {
   background-color: white;
-  font: 16px/1.5 'Cormorant', serif;
+  font: 16px/1.5 KoHo, sans-serif;
 }
 img {
   max-width: 100%;
@@ -4402,7 +4388,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Dancing Script', cursive;
+  font-family: KoHo, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -4752,7 +4738,7 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  background-color: #c0c0c0;
+  background-color: white;
 }
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
@@ -4915,7 +4901,7 @@ ul.toc {
   margin-right: 0.52083333%;
 }
 .outer-wrap-footer {
-  background-color: #c0c0c0;
+  background-color: white;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -5145,7 +5131,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: inherit;
+  background-color: white;
 }
 .rm-desktop li {
   position: relative;
@@ -5156,7 +5142,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a {
   color: inherit;
-  background-color: inherit;
+  background-color: white;
 }
 .rm-desktop li a:hover {
   color: inherit;
@@ -5236,7 +5222,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #c0c0c0;
+  background-color: white;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -5266,7 +5252,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-max .rm-mobile .rm-submenu-button:hover {
   text-decoration: none;
-  background-color: #c0c0c0;
+  background-color: #fff;
 }
 .rm-max .rm-mobile li ul {
   padding-left: 8px;
@@ -5281,6 +5267,134 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   right: 0;
 }
 /**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
+/**
  * My own settings, not currently in their own module.
  */
 body {
@@ -5289,24 +5403,104 @@ body {
 /*@maxBgColor = background-color responsive menu. Originally set in
 @desinax/responsive-menu/less/responsive-menu.less:
 */
+/*@navbarItemBgColor = background-color navbar. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
 /*Affects only an image element that is a child of the class
 region-main AND a child of the class site-logo-text-icon:*/
-.region-flash img,
-.site-logo-text-icon img {
-  visibility: hidden;
+.region-flash img {
+  display: none;
+}
+.site-logo-text-icon {
+  background-color: white;
 }
 body {
-  color: #333;
-  line-height: 1.5;
+  animation: pulsate 60s linear infinite;
+}
+@keyframes pulsate {
+  0% {
+    background-color: #fedd58;
+  }
+  10% {
+    background-color: #ffa4c1;
+  }
+  20% {
+    background-color: #f2e6aa;
+  }
+  30% {
+    background-color: #f0c0e5;
+  }
+  40% {
+    background-color: #a37399;
+  }
+  50% {
+    background-color: #7ba3a2;
+  }
+  60% {
+    background-color: #84bdbb;
+  }
+  70% {
+    background-color: #f2e6aa;
+  }
+  80% {
+    background-color: #f0c0e5;
+  }
+  90% {
+    background-color: #a37399;
+  }
+  100% {
+    background-color: #fedd58;
+  }
 }
 .region-main {
-  background-color: pink;
+  background-color: white;
+  box-shadow: 15px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 a,
 .rm-desktop li a {
   color: #333;
   font-style: italic;
 }
+.wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar,
+.wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar {
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.byline {
+  background-color: white;
+}
+a:hover,
+.rm-desktop li a:hover {
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: #fffd18;
+}
 p {
   padding-left: 0.1em;
+}
+.article p::first-letter {
+  font-size: 1.5em;
+}
+/*
+*Overrides the style above on the first letter in all p-elements
+*so that text to images is not involved
+*/
+.figure figcaption p:first-letter {
+  font-size: 1em;
+}
+.column.footer-column h4,
+.column.footer-column a,
+.column.footer-column p,
+.block.site-footer,
+.footer-column-1.block,
+.footer-column-2.block,
+.footer-column-3.block {
+  background-color: white;
+}
+.outer-wrap.outer-wrap-footer {
+  border-top: 1px solid #333;
+}
+.inner-wrap.inner-wrap-header {
+  border-bottom: 1px solid #333;
 }

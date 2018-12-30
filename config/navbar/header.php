@@ -87,17 +87,27 @@ return [
                     [
                         "text" => "Kmom04",
                         "url" => "rapport/fargschema",
-                        "title" => "Rapport för kmom04.",
+                        "title" => "Rapport för kmom04 - färgschema.",
                     ],
                     [
                         "text" => "Kmom05",
                         "url" => "rapport/laddningstid",
-                        "title" => "Rapport för kmom05.",
+                        "title" => "Rapport för kmom05 - laddningstid.",
                     ],
                     [
                         "text" => "Kmom06",
                         "url" => "rapport/designprincip",
-                        "title" => "Rapport för kmom06.",
+                        "title" => "Rapport för kmom06 - designprincip.",
+                    ],
+                    [
+                        "text" => "Kmom06",
+                        "url" => "rapport/designelement",
+                        "title" => "Rapport för kmom06 - designelement.",
+                    ],
+                    [
+                        "text" => "Kmom06",
+                        "url" => "rapport/designprinciper",
+                        "title" => "Rapport för kmom06 - designprinciper.",
                     ],
                 ],
             ],

@@ -4729,7 +4729,10 @@ hr::after {
 }
 .inner-wrap-header,
 .inner-wrap-footer {
-  width: 99%;
+  /**Style below changed from 99% to 100% due to
+    *overflow-x:hidden in *kmom03.less, kmom04.less, kmom05.LESS
+    */
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
@@ -5290,7 +5293,7 @@ body {
 region-main AND a child of the class site-logo-text-icon:*/
 .region-flash img,
 .site-logo-text-icon img {
-  display: none;
+  visibility: hidden;
 }
 body {
   color: #333;

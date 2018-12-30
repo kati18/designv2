@@ -1,0 +1,159 @@
+/*!
+* Stylesheet kmom06-designprinciper.
+*/
+@import url('https://fonts.googleapis.com/css?family=KoHo:600');
+@import "kmom05.less";
+
+
+//Variables:
+
+@bgColorHeaderFooter: white;
+@bgColorMain: white;
+@textColor: #333;
+@textColorLinks: #333;
+@colorHeadingsBorderBottom: #333;
+@borderColor: #333; //variable defined in less/vgrid.less
+
+
+/*@maxBgColor = background-color responsive menu. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+@maxBgColor: white;
+@maxButtonClickedColor: @textColor;
+@maxButtonSubmenuBgColor: #fff;
+@maxButtonSubmenuHoverBgColor: #fff;
+@mobileColor: @textColorLinks;//The arrows on the buttons and the links.
+
+/*@navbarItemBgColor = background-color navbar. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+@navbarItemBgColor: white;
+
+@fontFamilyHeadings: KoHo, sans-serif;
+@fontFamilyBody:     KoHo, sans-serif;
+
+@colorH1BorderBottom: @colorHeadingsBorderBottom; //#666;
+@colorH2BorderBottom: @colorHeadingsBorderBottom; //#CCC;
+@colorH3BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+@colorH4BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+@colorH5BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+@colorH6BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+
+
+
+/*Affects only an image element that is a child of the class
+region-main AND a child of the class site-logo-text-icon:*/
+.region-flash img {
+    display: none;
+}
+
+.site-logo-text-icon {
+    background-color: white;
+}
+
+body {
+    animation: pulsate 60s linear infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        background-color: #fedd58;
+    }
+    10% {
+        background-color: #ffa4c1;
+    }
+    20% {
+        background-color: #f2e6aa;
+    }
+    30% {
+        background-color: #f0c0e5;
+    }
+    40% {
+        background-color: #a37399;
+    }
+    50% {
+        background-color: #7ba3a2;
+    }
+    60% {
+        background-color: #84bdbb;
+    }
+    70% {
+        background-color: #f2e6aa;
+    }
+    80% {
+        background-color: #f0c0e5;
+    }
+    90% {
+        background-color: #a37399;
+    }
+    100% {
+        background-color: #fedd58; //#7ba3a2;
+    }
+}
+
+.region-main {
+    background-color: white;
+    box-shadow: 15px 10px 5px 0px rgba(0, 0, 0, 0.2);//enl guide
+}
+
+
+a, .rm-desktop li a {
+    color: @textColorLinks;
+    font-style: italic;
+}
+
+.wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar,
+.wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar {
+    background-color: #fff;
+    //box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2); //enl guide
+    box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.byline {
+    // background-color: #eee;
+    background-color: white;
+}
+
+a:hover,
+.rm-desktop li a:hover {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #fffd18;
+}
+
+p {
+    padding-left: 0.1em;
+}
+
+.article p::first-letter {
+    font-size: 1.5em;
+    // font-style: italic;
+}
+
+/*
+*Overrides the style above on the first letter in all p-elements
+*so that text to images is not involved
+*/
+.figure figcaption p:first-letter {
+    font-size: 1em;
+}
+
+.column.footer-column h4,
+.column.footer-column a,
+.column.footer-column p,
+.block.site-footer,
+.footer-column-1.block,
+.footer-column-2.block,
+.footer-column-3.block {
+    // background-color: @bgColorHeaderFooter;
+    background-color: white;
+}
+
+.outer-wrap.outer-wrap-footer {
+    border-top: 1px solid @textColor;
+}
+
+.inner-wrap.inner-wrap-header {
+    border-bottom: 1px solid @textColor;
+}
