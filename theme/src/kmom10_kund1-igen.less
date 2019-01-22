@@ -1,0 +1,125 @@
+/*!
+* Stylesheet for kmom10-kund1.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Cormorant:600,700');
+@import "kmom05.less";
+
+
+//Variables:
+@bgImage: url(../img/paragraph-200.jpg);
+@bgColorHeaderFooter: #eee; //#c0c0c0;
+@bgColorMain: pink;
+@textColor: #333;
+@textColorLinks: #333;
+@colorHeadingsBorderBottom: #333;
+@borderColor: #333; //variable defined in less/vgrid.less
+
+
+/*@maxBgColor = background-color responsive menu. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+@maxBgColor: #eee; //#c0c0c0;
+@maxButtonClickedColor: @textColor;
+@maxButtonSubmenuBgColor: #fff;
+@maxButtonSubmenuHoverBgColor: #c0c0c0;
+@mobileColor: @textColorLinks;//The arrows on the buttons and the links.
+
+/*@navbarItemBgColor = background-color navbar. Originally set in
+@desinax/responsive-menu/less/responsive-menu.less:
+*/
+@navbarItemBgColor: #eee;
+
+@fontFamilyHeadings: 'Dancing Script', cursive; //'Cormorant', serif;
+@fontFamilyBody: 'Cormorant', serif;
+
+@colorH1BorderBottom: @colorHeadingsBorderBottom; //#666;
+@colorH2BorderBottom: @colorHeadingsBorderBottom; //#CCC;
+@colorH3BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+@colorH4BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+@colorH5BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+@colorH6BorderBottom: @colorHeadingsBorderBottom; //#EEE;
+
+
+
+/*Affects only an image element that is a child of the class
+region-main AND a child of the class site-logo-text-icon:*/
+.region-flash img {
+    display: none;
+}
+
+.site-logo-text-icon img {
+    // display: none;
+    visibility: hidden;
+}
+
+
+body {
+    background-image: @bgImage;
+    background-repeat: repeat;
+    color: @textColor;
+    line-height: 1.5;
+}
+
+.region-main {
+    // background-color: rgba(255, 192, 203, 0.8);
+    background-color: @bgColorMain;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+a, .rm-desktop li a, {
+    color: @textColorLinks;
+    font-style: italic;
+}
+
+.wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar,
+.wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar {
+    // background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    outline: solid 1px #eee;
+}
+
+.byline {
+    background-color: #eee;
+}
+
+a:hover {
+    font-weight: bold;
+    font-style: normal;
+}
+
+p {
+    padding-left: 0.1em;
+}
+
+.article p::first-letter {
+    font-size: 1.5em;
+}
+
+/*
+*Overrides the style above on the first letter in all p-elements
+*so that text to images is not involved
+*/
+.figure figcaption p:first-letter {
+    font-size: 1em;
+}
+
+.column.footer-column h4,
+.column.footer-column a,
+.column.footer-column p,
+.block.site-footer,
+.footer-column-1.block,
+.footer-column-2.block,
+.footer-column-3.block {
+    background-color: @bgColorHeaderFooter;
+}
+
+.outer-wrap.outer-wrap-footer {
+    border-top: 1px dotted @textColor;
+}
+
+.inner-wrap.inner-wrap-header {
+    border-bottom: 1px dotted @textColor;
+}

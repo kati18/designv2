@@ -50,6 +50,11 @@ return [
                         "url" => "redovisning/kmom06",
                         "title" => "Redovisning för kmom06.",
                     ],
+                    [
+                        "text" => "Kmom10",
+                        "url" => "redovisning/kmom10",
+                        "title" => "Redovisning för kmom10.",
+                    ],
                 ],
             ],
         ],
@@ -108,6 +113,11 @@ return [
                         "text" => "Kmom06",
                         "url" => "rapport/designprinciper",
                         "title" => "Rapport för kmom06 - designprinciper.",
+                    ],
+                    [
+                        "text" => "Kmom10",
+                        "url" => "rapport/webbplatsdesign",
+                        "title" => "Rapport för kmom10 - webbplatsdesign.",
                     ],
                 ],
             ],

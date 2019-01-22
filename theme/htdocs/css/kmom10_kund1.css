@@ -1,5 +1,5 @@
 /*!
-* Stylesheet for kmom06-designelement.
+* Stylesheet for kmom10-kund1.
 */
 @font-face {
   font-family: 'Dancing Script';
@@ -4416,7 +4416,7 @@ h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
   font-weight: normal;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffd700;
   margin-bottom: 23px;
 }
 h1 ~ h1,
@@ -4435,7 +4435,7 @@ h2 {
   line-height: 1.6;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffd700;
 }
 h2 + h3 {
   margin-top: 24px;
@@ -4445,7 +4445,7 @@ h3 {
   line-height: 1.71428571;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffd700;
 }
 h3 + h4 {
   margin-top: 24px;
@@ -4455,7 +4455,7 @@ h4 {
   line-height: 1;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffd700;
 }
 h4 + h5 {
   margin-top: 24px;
@@ -4464,7 +4464,7 @@ h5 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffd700;
 }
 h5 + h6 {
   margin-top: 24px;
@@ -4473,7 +4473,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffd700;
 }
 p {
   margin-bottom: 24px;
@@ -4750,7 +4750,7 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  background-color: #eee;
+  background-color: #fff;
 }
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
@@ -4891,8 +4891,8 @@ ul.toc {
   font-style: oblique;
   font-size: small;
   height: 75px;
-  border-top: solid thin #333;
-  border-bottom: solid thin #333;
+  border-top: solid thin #ffd700;
+  border-bottom: solid thin #ffd700;
 }
 /**
  * Footer layout. Style from footer.less
@@ -4913,7 +4913,7 @@ ul.toc {
   margin-right: 0.52083333%;
 }
 .outer-wrap-footer {
-  background-color: #eee;
+  background-color: #fff;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -5143,7 +5143,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: #eee;
+  background-color: #890a0a;
 }
 .rm-desktop li {
   position: relative;
@@ -5154,7 +5154,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a {
   color: inherit;
-  background-color: #eee;
+  background-color: #890a0a;
 }
 .rm-desktop li a:hover {
   color: inherit;
@@ -5177,7 +5177,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   width: 100%;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
   background-color: #444;
-  color: #333;
+  color: #890a0a;
 }
 .rm-mobile a {
   color: inherit;
@@ -5217,7 +5217,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #333;
+  color: #890a0a;
   position: fixed;
   top: 16px;
   right: 24px;
@@ -5234,7 +5234,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #eee;
+  background-color: #fff;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -5251,7 +5251,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max .rm-mobile .rm-submenu-button {
   float: right;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
-  background-color: #fff;
+  background-color: #ffd700;
   padding: 8px 24px;
   margin-right: 8px;
   margin-top: 10px;
@@ -5423,27 +5423,33 @@ region-main AND a child of the class site-logo-text-icon:*/
 .region-flash img {
   display: none;
 }
-.site-logo-text-icon img {
-  visibility: hidden;
+.site-logo-text a #text {
+  color: #fff;
 }
 body {
-  background-image: url(../img/Koch_Snowflake_4th_iteration.jpg);
-  background-repeat: repeat;
-  color: #333;
+  background-color: #890a0a;
   line-height: 1.5;
 }
 .region-main {
-  background-color: pink;
+  background-color: #fff;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  color: #333;
 }
 a,
 .rm-desktop li a {
+  color: #ffd700;
+  font-style: italic;
+}
+ul.toc li a,
+div.next-previous div.next a,
+div.next-previous div.previous a,
+div.block p a {
   color: #333;
   font-style: italic;
 }
 .wrap-sidebar.region-sidebar-right.has-sidebar-right.has-sidebar,
 .wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
   outline: solid 1px #eee;
 }
@@ -5474,11 +5480,11 @@ p {
 .footer-column-1.block,
 .footer-column-2.block,
 .footer-column-3.block {
-  background-color: #eee;
+  background-color: #fff;
 }
 .outer-wrap.outer-wrap-footer {
-  border-top: 1px dotted #333;
+  border-top: 10px solid #ffd700;
 }
 .inner-wrap.inner-wrap-header {
-  border-bottom: 1px dotted #333;
+  border-bottom: 10px solid #ffd700;
 }

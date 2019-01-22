@@ -32,3 +32,6 @@ v5.0.0 (2018-12-17)
 v6.0.0 (2018-12-30)
 --------------------
 * Adding stylesheets for themes design elements and design principles and report for design principles.
+
+v10.0.0 (2019-01-22)
+* Final exam - adding webbsite design analysis in kmom10

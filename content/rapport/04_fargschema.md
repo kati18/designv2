@@ -1,6 +1,6 @@
 ---
 ---
-Rapport kmom04 - uvärdering av webbplatsers färgval
+Rapport kmom04 - utvärdering av webbplatsers färgval
 ===================================================
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/rapport/04_fargschema.md`.

@@ -1,5 +1,5 @@
 /*!
-* Stylesheet for kmom06-designelement.
+* Stylesheet for kmom10-kund1.
 */
 @font-face {
   font-family: 'Dancing Script';
@@ -5427,7 +5427,7 @@ region-main AND a child of the class site-logo-text-icon:*/
   visibility: hidden;
 }
 body {
-  background-image: url(../img/Koch_Snowflake_4th_iteration.jpg);
+  background-image: url(../img/paragraph-200.jpg);
   background-repeat: repeat;
   color: #333;
   line-height: 1.5;

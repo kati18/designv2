@@ -11,13 +11,13 @@
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 600;
-  src: local('Cormorant SemiBold'), local('Cormorant-SemiBold'), url(https://fonts.gstatic.com/s/cormorant/v6/H4cgBXOCl9bbnla_nHIiML-ohYa2.ttf) format('truetype');
+  src: local('Cormorant SemiBold'), local('Cormorant-SemiBold'), url(https://fonts.gstatic.com/s/cormorant/v7/H4cgBXOCl9bbnla_nHIiML-ohYa2.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 700;
-  src: local('Cormorant Bold'), local('Cormorant-Bold'), url(https://fonts.gstatic.com/s/cormorant/v6/H4cgBXOCl9bbnla_nHIiVL6ohYa2.ttf) format('truetype');
+  src: local('Cormorant Bold'), local('Cormorant-Bold'), url(https://fonts.gstatic.com/s/cormorant/v7/H4cgBXOCl9bbnla_nHIiVL6ohYa2.ttf) format('truetype');
 }
 /*!
  * Stylesheet for design kmom05.This style is my base-style in kmom05.
